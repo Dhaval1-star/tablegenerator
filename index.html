@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="table.css">
+    <title>table generator</title>   
+</head>
+    <body>
+    <div class="parent-page">
+        <div class="container">
+            <h1>create your table</h1>
+            <a href="#one">enter data  💻 </a>
+            <a href="#two">output 👁️‍🗨️</a>
+        </div>
+    </div>
+    <!-- entering the data portion  -->
+    <div class="child-one" id="one">
+        <h1>create your own table ! </h1>
+        <form >
+            <div class="data">
+                <label for="#name">name</label>
+            <input type="text" id="name" placeholder="enter your name "  autocomplete="off">
+        </div>
+        <div class="data">
+            <label for="#description">description</label>
+            <textarea  id="description" rows="1" placeholder="enter description " ></textarea>
+        </div>
+        <div class="button">
+            <button onclick="myfunc()" type="submit">submit</button>
+            <button >reset</button>
+        </div>
+    </form>
+</div>
+
+<!-- showing the data  -->
+<div class="child-two" id="two">
+    <h1>output </h1>
+    <table>
+        <thead>
+            <th>sr no </th>
+            <th>name</th>
+            <th>description</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<script src="table.js"></script>
+</body>
+</html>
